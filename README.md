@@ -1,6 +1,6 @@
 # Python-based Automated Secrets Scanner with Slack Alerting
 
-A lightweight Python tool to detect hardcoded secrets in code repositories. The tool further flags risky patterns and sends real-time Slack alerts for remediation.
+A lightweight Python tool to detect hardcoded secrets in code repositories. The tool further flags risky patterns and sends real-time Slack alerts for real-time visibility.
 
 The tool scans for:
 
@@ -52,6 +52,29 @@ File: app/config.py
   - AWS Access Key (1 matches)
   - Password (2 matches)
 --------------------------------------------------
+
+## Setup Slack Integration
+1. Create Webhook
+Go to Slack → Apps → Incoming Webhooks
+
+Copy webhook URL
+
+2. Export Environment Variable
+export SLACK_WEBHOOK_URL=https://hooks.slack.com/services/XXXX
+
+
+## Slack Alerts
+
+## Setup
+export SLACK_WEBHOOK_URL=https://hooks.slack.com/services/XXXX
+
+Behavior
+
+Sends summary + top findings
+
+Truncates long outputs
+
+Skips alerts if no issues found
 
 
 ## Best Practices

@@ -37,7 +37,7 @@ Examples:
 
 ## Installation
 
-git clone https://github.com/ericpaatey/secrets-scanner.git
+git clone https://github.com/ericpaatey/auto-secrets_scanner-with-slack-alerting.git
 
 cd secrets-scanner
 
